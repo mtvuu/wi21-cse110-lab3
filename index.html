@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   
 <head>
@@ -8,7 +9,7 @@
 </head>
   
 <body style="font-family:verdana;">
-  <h1><div style="border: 1px solid black">Michael Vu's Webpage</div></h1>
+  <div style="border: 1px solid black"><h1>Michael Vu's Webpage</h1></div>
   <img src="https://raw.githubusercontent.com/mtvuu/mtvuu.labtwo.io/gh-pages/Bang02.png" alt="02" width="250" height="140">
   <iframe width="250" height="140"
     src="https://www.youtube.com/embed/A4kLcDWBYcQ">
@@ -60,6 +61,15 @@
   
   <h2>Top Songs Right Now</h2>
   <table>
+      <colgroup>
+        <col span="1" style="background-color:yellow">
+        <col style="background-color:green">
+      </colgroup>
+      <caption>Fav Songs</caption>
+      <tr>
+        <th>Song Name</th>
+        <th>Artist Name</th>
+      </tr>
     <tbody>
       <tr>
         <td><q><em>Sky</em></q></td>
@@ -75,46 +85,60 @@
       </tr>
       <tr>
         <td><q><em>Achoo</em></q></td>
-        <td>Ski Mask the Slump God and Keith Ape</td>
+        <td>Ski Mask and Keith Ape</td>
       </tr>
       <tr>
         <td><q><em>Trap</em></q></td>
         <td>SAINt JHN and Lil Baby</td>
       </tr>
     </tbody>
-  </table>
+  </table><br>
+  <nav>
+    <a href="https://www.youtube.com/watch?v=GYE9H4SMq5E">Sky</a> |
+    <a href="https://www.youtube.com/watch?v=7uJxtwBFxxI">Styx Helix</a> |
+    <a href="https://www.youtube.com/watch?v=q63pY_p2pKs">Don't Need Friends</a> |
+    <a href="https://www.youtube.com/watch?v=9oMQrrPr5OY">Achoo</a> |
+    <a href="https://www.youtube.com/watch?v=Mf6oZPPYIXI">Trap</a>
+  </nav><br>
   <form>
-  <label for="cars">Choose an artist:</label>
-  <select name="cars" id="cars">
-    <optgroup label="Trap">
-      <option>Lil Baby</option>
-      <option>Baby Keem</option>
-    </optgroup>
-    <optgroup label="Sad Rap">
-      <option>916frosty</option>
-      <option>Juice Wrld</option>
-    </optgroup>
-  </select>
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
+    <label for="cars">Choose your favorite:</label>
+    <select name="cars" id="cars">
+      <optgroup label="Rap">
+        <option>Sky</option>
+        <option>Don't Need Friends</option>
+        <option>Achoo</option>
+        <option>Trap</option>
+      </optgroup>
+      <optgroup label="Anime">
+        <option>Styx Helix</option>
+      </optgroup>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
   
   <hr>
   
-  <h3>Song Suggestions</h3>
+  <h3>Quick Survey</h3>
 
   <form action="/action_page.php">
     <fieldset>
-    <legend>Song Survey:</legend>
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <label for="song">Song Name:</label>
-    <input type="text" id="song" name="song"><br><br>
-    <input type="submit" value="Submit">
+      <legend>Quick Survey:</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="song">Song Name:</label>
+      <input type="text" id="song" name="song"><br><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+      <input type="submit" value="Submit">
     </fieldset>
   </form>
 </body>
