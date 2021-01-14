@@ -13,6 +13,10 @@
   <iframe width="250" height="140"
     src="https://www.youtube.com/embed/A4kLcDWBYcQ">
   </iframe>
+  <audio controls>
+    <source src="https://github.com/mtvuu/mtvuu.labtwo.io/blob/gh-pages/DITFOP.mp3?raw=true" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
   <p style="color:red;"><b><q>Will Your Lips Taste The <span style="border: 1px solid red">Kiss Of Death</span>?</q></b></p>
   
   <hr>
@@ -34,15 +38,15 @@
   <h2>Top Artists Right Now</h2>
   <figure>
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Kanye_West_at_the_2009_Tribeca_Film_Festival-2_%28cropped%29.jpg" alt="Kanye" style="width:10%">
-    <figcaption>Fig.1 - Kanye West.</figcaption>
+    <figcaption>Fig.1 - <i>Kanye West</i>.</figcaption>
   </figure>
-  <p><ol>
+  <ol>
     <li><strong>Kanye West</strong></li>
     <li><strong>Lil Uzi Vert</strong></li>
     <li><strong>SAINt JHN</strong></li>
     <li><strong>Playboi Carti</strong></li>
     <li><strong>916frosty</strong></li>
-  </ol></p>
+  </ol>
   <details>
     <summary>Honorable Mentions</summary>
     <p>
@@ -58,37 +62,61 @@
   <table>
     <tbody>
       <tr>
-        <td><q>Sky</q></td>
+        <td><q><em>Sky</em></q></td>
         <td>Playboi Carti</td>
       </tr>
       <tr>
-        <td><q>Styx Helix</q></td>
+        <td><q><em>Styx Helix</em></q></td>
         <td>Myth & Roid</td>
       </tr>
       <tr>
-        <td><q>Don't Need Friends</q></td>
+        <td><q><em>Don't Need Friends</em></q></td>
         <td>Nav and Lil Baby</td>
       </tr>
       <tr>
-        <td><q>Achoo</q></td>
+        <td><q><em>Achoo</em></q></td>
         <td>Ski Mask the Slump God and Keith Ape</td>
       </tr>
       <tr>
-        <td><q>Trap</q></td>
+        <td><q><em>Trap</em></q></td>
         <td>SAINt JHN and Lil Baby</td>
       </tr>
     </tbody>
   </table>
+  <form>
+  <label for="cars">Choose an artist:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Trap">
+      <option>Lil Baby</option>
+      <option>Baby Keem</option>
+    </optgroup>
+    <optgroup label="Sad Rap">
+      <option>916frosty</option>
+      <option>Juice Wrld</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
   
   <hr>
   
-  <h3>Any Song Suggestions?</h3>
+  <h3>Song Suggestions</h3>
+
   <form action="/action_page.php">
-    <label for="song">Song Name:</label><br>
-    <input type="text" id="song" name="song"><br>
+    <fieldset>
+    <legend>Song Survey:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="song">Song Name:</label>
+    <input type="text" id="song" name="song"><br><br>
     <input type="submit" value="Submit">
+    </fieldset>
   </form>
-  <button> Honk </button>
 </body>
   
 </html>
