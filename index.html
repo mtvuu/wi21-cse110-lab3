@@ -9,6 +9,9 @@
 </head>
   
 <body style="font-family:verdana;">
+  <header>
+    <p>Created by Michael Vu</p>
+  </header>
   <div style="border: 1px solid black"><h1>Michael Vu's Webpage</h1></div>
   <img src="https://raw.githubusercontent.com/mtvuu/mtvuu.labtwo.io/gh-pages/Bang02.png" alt="02" width="250" height="140">
   <iframe width="250" height="140"
@@ -41,6 +44,13 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Kanye_West_at_the_2009_Tribeca_Film_Festival-2_%28cropped%29.jpg" alt="Kanye" style="width:10%">
     <figcaption>Fig.1 - <i>Kanye West</i>.</figcaption>
   </figure>
+  <aside>
+      <pre>
+          Kanye is the sixth most popular digital 
+          artist, with a grand total of 30 million 
+          downloads within America as of January 2016.
+      </pre>
+  </aside>
   <ol>
     <li><strong>Kanye West</strong></li>
     <li><strong>Lil Uzi Vert</strong></li>
@@ -138,9 +148,25 @@
       <label for="female">Female</label><br>
       <input type="radio" id="other" name="gender" value="other">
       <label for="other">Other</label><br><br>
+      <label for="w3review">Opinions on webpage:</label><br>
+      <textarea id="w3review" name="w3review" rows="2" cols="50">
+      </textarea><br><br>
+      <label for="genres">Choose your favorite genre:</label>
+      <input list="genres" name="genres" id="genre">
+      <datalist id="genres">
+        <option value="Rap">
+        <option value="Classical">
+        <option value="Country">
+        <option value="Jazz">
+        <option value="Pop">
+      </datalist>
       <input type="submit" value="Submit">
     </fieldset>
   </form>
+  <footer>
+    <p>Author: Michael Vu</p>
+    <p><a href="mailto:mtvu@ucsd.edu">mtvu@ucsd.edu</a></p>
+  </footer>
 </body>
   
 </html>
