@@ -12,16 +12,17 @@
   <header>
     <p>Created by Michael Vu</p>
   </header>
-  <div style="border: 1px solid black"><h1>Michael Vu's Webpage</h1></div>
-  <img src="https://raw.githubusercontent.com/mtvuu/mtvuu.labtwo.io/gh-pages/Bang02.png" alt="02" width="250" height="140">
-  <iframe width="250" height="140"
+  <main>
+    <div style="border: 1px solid black"><h1>Michael Vu's Webpage</h1></div>
+    <img src="https://raw.githubusercontent.com/mtvuu/mtvuu.labtwo.io/gh-pages/Bang02.png" alt="02" width="250" height="140">
+    <iframe width="250" height="140"
     src="https://www.youtube.com/embed/A4kLcDWBYcQ">
-  </iframe>
-  <audio controls>
+    </iframe>
+    <audio controls>
     <source src="https://github.com/mtvuu/mtvuu.labtwo.io/blob/gh-pages/DITFOP.mp3?raw=true" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio>
-  <p style="color:red;"><b><q>Will Your Lips Taste The <span style="border: 1px solid red">Kiss Of Death</span>?</q></b></p>
+    </audio>
+    <p style="color:red;"><b><q>Will Your Lips Taste The <span style="border: 1px solid red">Kiss Of Death</span>?</q></b></p>
+  </main>
   
   <hr>
   
@@ -46,14 +47,14 @@
   <figure>
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Kanye_West_at_the_2009_Tribeca_Film_Festival-2_%28cropped%29.jpg" alt="Kanye" style="width:10%">
     <figcaption>Fig.1 - <i>Kanye West</i>.</figcaption>
-  </figure>
-  <aside>
+    </figure>
+    <aside>
       <pre>
           Kanye is the sixth most popular digital 
           artist, with a grand total of 30 million 
           downloads within America as of January 2016.
       </pre>
-  </aside>
+    </aside>
   <ol>
     <li><strong>Kanye West</strong></li>
     <li><strong>Lil Uzi Vert</strong></li>
@@ -134,7 +135,7 @@
   
   <h3>Quick Survey</h3>
 
-  <form action="/action_page.php">
+  <form>
     <fieldset>
       <legend>Quick Survey:</legend>
       <label for="fname">First name:</label>
@@ -143,8 +144,17 @@
       <input type="text" id="lname" name="lname"><br><br>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email"><br><br>
-      <label for="song">Song Name:</label>
+      <label for="datemin">Enter the date:</label>
+      <input type="date"><br><br>
+      <label for="song">Favorite Song:</label>
       <input type="text" id="song" name="song"><br><br>
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor"><br><br>
+      <label for="myfile">Photo:</label>
+      <input type="file" id="myfile" name="myfile"><br><br>
+      <label>Phone Number:</label>
+      <input type="tel"><br><br>
+      <label>Gender:</label><br>
       <input type="radio" id="male" name="gender" value="male">
       <label for="male">Male</label><br>
       <input type="radio" id="female" name="gender" value="female">
@@ -154,6 +164,8 @@
       <label for="w3review">Opinions on webpage:</label><br>
       <textarea id="w3review" name="w3review" rows="2" cols="50">
       </textarea><br><br>
+      <label>Webpage Rating (1-10):</label>
+      <input type="number"><br><br>
       <label for="genres">Choose your favorite genre:</label>
       <input list="genres" name="genres" id="genre">
       <datalist id="genres">
@@ -163,12 +175,29 @@
         <option value="Jazz">
         <option value="Pop">
       </datalist>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit"><br><br>
+      <input type="reset">
     </fieldset>
   </form>
+  <p>Click the button to add Rectangles.</p>
+  <button onclick="showContent()">Add Rectangles</button>
+  <template>
+    <svg width="400" height="180">
+      <rect x="20" y="20" rx="20" ry="20" width="50" height="50"
+      style="fill:red;stroke:black;stroke-width:5" />
+    </svg>
+  </template>
+  <script>
+    function showContent() {
+      var temp = document.getElementsByTagName("template")[0];
+      var clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+    }
+  </script>
   <footer>
     <p>Author: Michael Vu</p>
     <p><a href="mailto:mtvu@ucsd.edu">mtvu@ucsd.edu</a></p>
+
   </footer>
 </body>
   
