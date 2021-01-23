@@ -2,6 +2,8 @@
 <html lang="en">
   
 <head>
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
   <meta charset="UTF-8">
   <meta name="description" content="Michael Vu's Lab 2">
   <meta name="author" content="Michael Vu">
@@ -10,33 +12,36 @@
   
 <body style="font-family:verdana;">
   <header>
-    <p>Created by Michael Vu</p>
+    <p id="createdby">Created by Michael Vu</p>
   </header>
   <main>
-    <div style="border: 1px solid black"><h1>Michael Vu's Webpage</h1></div>
-    <img src="https://raw.githubusercontent.com/mtvuu/mtvuu.labtwo.io/gh-pages/Bang02.png" alt="02" width="250" height="140">
-    <iframe width="250" height="140"
-    src="https://www.youtube.com/embed/A4kLcDWBYcQ">
+    <div id="title"><h1>Michael Vu's Webpage</h1></div>
+    <h1 style="display: none;">Hidden Title</h1>
+    <div class="flex">
+      <img src="https://raw.githubusercontent.com/mtvuu/mtvuu.labtwo.io/gh-pages/Bang02.png" alt="02" width="250" height="140">
+      <iframe
+      src="https://www.youtube.com/embed/A4kLcDWBYcQ">
     </iframe>
+    </div>
     <audio controls>
     <source src="https://github.com/mtvuu/mtvuu.labtwo.io/blob/gh-pages/DITFOP.mp3?raw=true" type="audio/mp3">
     </audio>
-    <p style="color:red;"><b><q>Will Your Lips Taste The <span style="border: 1px solid red">Kiss Of Death</span>?</q></b></p>
+    <p style="color:rgb(255, 0, 0);"><b><q>Will Your Lips Taste The <span style="border: 1px solid red">Kiss Of Death</span>?</q></b></p>
   </main>
   
   <hr>
-  
+
   <h2>Spofity Playlists</h2>
   <section>
     <h3>Main Spotify Playlist</h3>
-    <ul>    
+    <ul class="center">    
       <li><a href="https://open.spotify.com/playlist/7eQVYX5OojUcPta3u0XRzg" target="_blank">^^^ Playlist</a></li>
       <li><a href="https://open.spotify.com/playlist/2nc1PSY18589KgbhyQWBHV" target="_blank">-_- Playlist</a></li>
     </ul>
   </section>
   <section>
     <h3>Other Playlist</h3>
-    <ul>
+    <ul class="center">
       <li><a href="https://open.spotify.com/playlist/5Cqb56tYBJzaIRE4QS4nA1" target="_blank">[o] Playlist</a></li>
     </ul>  
   </section>
@@ -46,7 +51,7 @@
   <h2>Top Artists Right Now</h2>
   <figure>
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Kanye_West_at_the_2009_Tribeca_Film_Festival-2_%28cropped%29.jpg" alt="Kanye" style="width:10%">
-    <figcaption>Fig.1 - <i>Kanye West</i>.</figcaption>
+    <figcaption style="color:hsl(0, 100%, 49%);">Fig.1 - <i>Kanye West</i>.</figcaption>
     </figure>
     <aside>
       <pre>
@@ -55,7 +60,7 @@
           downloads within America as of January 2016.
       </pre>
     </aside>
-  <ol>
+  <ol class="center">
     <li><strong>Kanye West</strong></li>
     <li><strong>Lil Uzi Vert</strong></li>
     <li><strong>SAINt JHN</strong></li>
@@ -74,46 +79,28 @@
   <hr>
   
   <h2>Top Songs Right Now</h2>
-  <table>
-      <colgroup>
-        <col span="1" style="background-color:yellow">
-        <col style="background-color:green">
-      </colgroup>
-      <caption>Fav Songs</caption>
-      <tr>
-        <th>Song Name</th>
-        <th>Artist Name</th>
-      </tr>
-    <tbody>
-      <tr>
-        <td><q><em>Sky</em></q></td>
-        <td>Playboi Carti</td>
-      </tr>
-      <tr>
-        <td><q><em>Styx Helix</em></q></td>
-        <td>Myth & Roid</td>
-      </tr>
-      <tr>
-        <td><q><em>Don't Need Friends</em></q></td>
-        <td>Nav and Lil Baby</td>
-      </tr>
-      <tr>
-        <td><q><em>Achoo</em></q></td>
-        <td>Ski Mask and Keith Ape</td>
-      </tr>
-      <tr>
-        <td><q><em>Trap</em></q></td>
-        <td>SAINt JHN and Lil Baby</td>
-      </tr>
-    </tbody>
-  </table><br>
+  <div class="table-container">
+    <div class="table-item"><strong>Song Name</strong></div>
+    <div class="table-item"><strong>Artist Name</strong></div>
+    <div class="table-item"><q><em>Sky</em></q></div>  
+    <div class="table-item">Playboi Carti</div>
+    <div class="table-item"><q><em>Styx Helix</em></q></div>
+    <div class="table-item">Myth & Roid</div>  
+    <div class="table-item"><q><em>Don't Need Friends</em></q></div>
+    <div class="table-item">Nav and Lil Baby</div>
+    <div class="table-item"><q><em>Achoo</em></q></div>
+    <div class="table-item">Ski Mask and Keith Ape</div>
+    <div class="table-item"><q><em>Trap</em></q></div>
+    <div class="table-item">SAINt JHN and Lil Baby</div>  
+  </div>
+  <br>
   <nav>
     <a href="https://www.youtube.com/watch?v=GYE9H4SMq5E">Sky</a> |
     <a href="https://www.youtube.com/watch?v=7uJxtwBFxxI">Styx Helix</a> |
     <a href="https://www.youtube.com/watch?v=q63pY_p2pKs">Don't Need Friends</a> |
     <a href="https://www.youtube.com/watch?v=9oMQrrPr5OY">Achoo</a> |
     <a href="https://www.youtube.com/watch?v=Mf6oZPPYIXI">Trap</a>
-  </nav><br>
+  </nav><br><br>
   <form>
     <label for="cars">Choose your favorite:</label>
     <select name="cars" id="cars">
@@ -196,9 +183,9 @@
   </script>
   <footer>
     <p>Author: Michael Vu</p>
-    <p><a href="mailto:mtvu@ucsd.edu">mtvu@ucsd.edu</a></p>
+    <p><a href="mailto:mtvu@ucsd.edu" target="email">mtvu@ucsd.edu</a></p>
 
   </footer>
 </body>
-  
+
 </html>
